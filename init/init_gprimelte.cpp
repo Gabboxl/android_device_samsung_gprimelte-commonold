@@ -31,6 +31,10 @@
 
 void init_target_properties(void)
 {
+
+    // Init a dummy BT MAC address, will be overwritten later
+    property_set("ro.boot.btmacaddr", "00:00:00:00:00:00");
+
 	char *device = NULL;
 	char *model = NULL;
 
